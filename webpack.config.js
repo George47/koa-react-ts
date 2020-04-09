@@ -6,7 +6,7 @@ const isDevelopment = process.env.NODE_ENV === 'development';
 module.exports = {
 
   // webpack will take the files from ./src/index
-  entry: './src/index',
+  entry: './src/client/index',
 
   // and output it into /static as bundle.js
   output: {
@@ -73,7 +73,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/client/index.html'
     }),
     new MiniCssExtractPlugin({
       filename: isDevelopment ? '[name].css' : '[name].[hash].css',
