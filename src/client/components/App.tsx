@@ -1,16 +1,15 @@
-import React from 'react';
+import * as React from 'react';
 import '../styles/index.scss';
 
-export default class App extends React.PureComponent {
-    componentDidMount() {
-        console.log('hit');
-    }
+export interface IAppProps {
+}
 
-    render() {
-        return (
-            <div>
-                <h1>Hello World!</h1>
-            </div>
-        )
-    }
+export default class App extends React.Component<IAppProps> {
+  public render() {
+    return (
+      <div>
+        <h1>Hello World</h1>
+      </div>
+    );
+  }
 }
