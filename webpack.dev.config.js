@@ -16,12 +16,12 @@ module.exports = {
 
 
   output: {
-    path: `${__dirname}/src/client/static/`,
+    path: `${__dirname}/static/`,
     publicPath: '/static/',
     filename: '[name].js',
   },
 
-  context: path.resolve(__dirname + '/src/client', './'),
+  context: path.resolve(__dirname, './'),
 
   module: {
     rules: [

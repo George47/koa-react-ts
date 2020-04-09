@@ -10,7 +10,7 @@ indexRouter.get('/health', async (ctx) => {
 
 // match all routes but not files (i.e. routes with dots)
 indexRouter.get(/^((?!\.).)*$/, async (ctx) => {
-  return ctx.render(config.isDev ? 'index-template' : 'index', {
+  return ctx.render('index', {
     isDev: config.isDev,
     config: {
       apiUrl: config.apiUrl,

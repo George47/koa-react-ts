@@ -10,8 +10,8 @@ const hmr = require('hmr');
 const routes = require('./routes');
 
 
-const pathToViews = path.join(__dirname, './../../client/views');
-const pathToStatic = path.join(__dirname, './../../client/static');
+const pathToViews = path.join(__dirname, './../../client');
+const pathToStatic = path.join(__dirname, './../../static');
 handlebars.registerHelper('json', (context) => JSON.stringify(context));
 
 module.exports = async (app) => {
