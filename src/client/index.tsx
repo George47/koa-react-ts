@@ -1,4 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
-ReactDOM.render(<App />, document.getElementById('root'));
+import App from './app';
+
+function render() {
+  ReactDOM.render(<App />, document.getElementById('root'));
+}
+  
+render();
+
+if (module.hot) {
+  module.hot.accept('./routes', render);
+}

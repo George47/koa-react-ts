@@ -1,10 +1,9 @@
 import * as React from 'react';
-import '../styles/index.scss';
 
-export interface IAppProps {
+export interface IHomeProps {
 }
 
-export default class App extends React.Component<IAppProps> {
+export default class Home extends React.Component<IHomeProps> {
   public render() {
     return (
       <div>
