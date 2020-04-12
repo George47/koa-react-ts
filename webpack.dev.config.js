@@ -96,6 +96,10 @@ module.exports = {
     extensions: ['.ts', '.tsx', '.js', '.scss']
   },
 
+  devServer: {
+    historyApiFallback: true,
+  },
+
   plugins: [
     new LodashModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
