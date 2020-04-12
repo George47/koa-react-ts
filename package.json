@@ -2,13 +2,13 @@
   "name": "koa-react-ts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/server/app.js",
   "scripts": {
     "bundle": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --mode development --open --hot",
+    "start": "node src/server/app.js",
     "build": "webpack --mode production",
-    "build-client": "webpack -p --config src/client/webpack.config.js",
+    "build-client": "webpack -p --config webpack.config.js",
     "check-types": "tsc"
   },
   "keywords": [],

@@ -4,6 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const isDevelopment = process.env.NODE_ENV === 'development';
 
 module.exports = {
+  mode: 'production',
 
   // webpack will take the files from ./src/index
   entry: './src/client/index',
@@ -76,7 +77,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/client/index.html'
+      template: './static/index.html'
     }),
     new MiniCssExtractPlugin({
       filename: isDevelopment ? '[name].css' : '[name].[hash].css',

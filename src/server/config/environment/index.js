@@ -3,6 +3,7 @@ const path = require('path');
 const fs = require('fs');
 
 const env = process.env.APP_ENV || 'development';
+console.log('whats env ...' ,process.env);
 
 let base = {
   env,

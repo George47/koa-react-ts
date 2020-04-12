@@ -14,6 +14,8 @@ const pathToViews = path.join(__dirname, './../../client');
 const pathToStatic = path.join(__dirname, './../../static');
 handlebars.registerHelper('json', (context) => JSON.stringify(context));
 
+console.log('isdev? ', config.isDev);
+
 module.exports = async (app) => {
   app.use(mount('/static', serve(pathToStatic)));
   app.use(views(config.isDev ? pathToViews : pathToStatic, {
